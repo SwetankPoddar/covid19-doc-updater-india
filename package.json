@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sendgrid/mail": "^7.0.0",
+    "node-html-parser": "^1.2.14",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "2.1.1",
+    "styled-components": "^5.0.1",
+    "urllib": "^2.34.2"
   },
   "scripts": {
     "dev": "BROWSER=none react-scripts start",

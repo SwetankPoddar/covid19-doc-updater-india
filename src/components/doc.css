@@ -1,0 +1,10 @@
+.links-list {
+    list-style-type: none
+}
+
+.doc-update {
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
