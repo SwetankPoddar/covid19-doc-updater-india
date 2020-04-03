@@ -12,20 +12,19 @@ function App() {
   const [docs, setDocs] = useState([]);
   
   useEffect(() => {
-
     fetch('/api/fetch_docs')
       .then(res => res.json())
       .then((result) => {
         setDocs(result)
       })
-
-  }, []);
+  }, [] );
   
   return (
     <Router>
-      <main>
-        <h1>COVID19 - Goverment Docs Updator</h1>
-        {docs ? docs.map((doc, i) => <Doc key={"update-" + i} information={doc}/>) : <h2>Loading...</h2> }
+      <main>        
+        <h1>Coronavirus Goverment Docs Updator  India</h1>
+        <span>Data {docs.length === 0 ? "being": null} retrieved from <a href="https://www.mohfw.gov.in/"  rel="noopener noreferrer" target="_blank">Ministry of Health and Family Welfare of India</a></span>
+        {docs.length > 0 ?  docs.map((doc, i) => <Doc key={"update-" + i} information={doc}/>) : <img src="/loading.gif" alt="loading animation"/>}
       </main>
     </Router>
   );

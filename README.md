@@ -1,29 +1,19 @@
 ![React Logo](https://github.com/zeit/now/blob/master/packages/frameworks/logos/react.svg)
 
-# React Example
+This project aims to make people aware about documents being released by the Indian goverment.
 
-This directory is a brief example of a [React](https://reactjs.org/) app with [Serverless Functions](https://zeit.co/docs/v2/serverless-functions/introduction) that can be deployed with ZEIT Now and zero configuration.
 
-## Deploy Your Own
+A majority of these documents contain very useful and important information, such as "how to make a mask using a cloth at home?". However, there's no "notification" system integrated in the goverment's website. So people have to keep on checking the website to receive information about that.
 
-Deploy your own React project, along with Serverless Functions, with ZEIT Now.
+Todo:
+- [x] Create template in React
+- [x] Develop a serverless api endpoint to extract information from MoHFW (India)
+- [x] Develop a parser to parse the infromation extracted from the endpoint
+- [x] Create component to display these information
+- [ ] Integrate a "subscribing" interface
+- [ ] Send the list of new docs everyday as a "newsletter" 
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/zeit/now/tree/master/examples/create-react-app-functions)
+### How to develop locally
+This website runs on Zeit's  [Serverless Functions](https://zeit.co/docs/v2/serverless-functions/introduction). The functions are written in Node.js and can be found inside "api" folder.
 
-_Live Example: https://create-react-app.now-examples.now.sh/_
-
-### How We Created This Example
-
-To get started with React, along with [Serverless Functions](https://zeit.co/docs/v2/serverless-functions/introduction), with ZEIT Now, you can use the [Create-React-App CLI](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) to initialize the project:
-
-```shell
-$ npx create-react-app my-app
-```
-
-### Deploying From Your Terminal
-
-You can deploy your new React project, along with [Serverless Functions](https://zeit.co/docs/v2/serverless-functions/introduction), with a single command from your terminal using [Now CLI](https://zeit.co/download):
-
-```shell
-$ now
-```
+To deploy this locally, install Zeit's [Now CLI](https://zeit.co/download). After which, clone this repository and type "now" in your terminal. Follow the instructions mentioned by NOW CLI. Once it gets over, type "now dev" to start a local development server.

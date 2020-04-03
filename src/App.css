@@ -11,6 +11,10 @@ main {
   min-height: 100vh;
   text-align: center;
 }
+
+main img {
+  justify-self: center;
+}
 a {
   border-bottom: 1px solid white;
   color: #0076ff;
