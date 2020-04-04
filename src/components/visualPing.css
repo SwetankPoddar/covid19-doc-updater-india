@@ -1,0 +1,76 @@
+.visualping-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	height: 152px;
+	max-width: 240px
+}
+
+.visualping-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+iframe {
+	border: 0
+}
+
+@media only screen and (min-width:767px) and (max-width:979px) {
+	.visualping-container {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		margin: 0 auto;
+		height: 180px;
+		max-width: 240px
+	}
+	.containerprivacy {
+		margin-bottom: 15px;
+	}
+}
+
+@media only screen and (max-width:767px) {
+	.visualping-container {
+		-webkit-box-sizing: inherit;
+		-moz-box-sizing: inherit;
+		box-sizing: inherit;
+		max-width: 95%!important
+	}
+}
+
+.containerprivacy {
+	width: 100%;
+	padding-bottom: 10px;
+	line-height: 1;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	max-width: 240px;
+}
+
+.privacyline {
+	font-size: 9px;
+	color: #8c8c8c;
+	padding-left: 2px;
+	padding-top: 0;
+	opacity: 0.6;
+	font-family: sans-serif;
+}
+
+a.vpprivatelink {
+	text-decoration: underline
+}
+
+a.vpprivatelink:visited {
+	color: inherit;
+}
+
+.vplogo {
+	width: 90px;
+	height: 13px;
+}
