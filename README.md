@@ -13,7 +13,11 @@ Todo:
 - [ ] Integrate a "subscribing" interface
 - [ ] Send the list of new docs everyday as a "newsletter" 
 
-### How to develop locally
+## How to develop locally
 This website runs on Zeit's  [Serverless Functions](https://zeit.co/docs/v2/serverless-functions/introduction). The functions are written in Node.js and can be found inside "api" folder.
 
 To deploy this locally, install Zeit's [Now CLI](https://zeit.co/download). After which, clone this repository and type "now" in your terminal. Follow the instructions mentioned by NOW CLI. Once it gets over, type "now dev" to start a local development server.
+
+## Funding
+### DigitalOcean
+DigitalOcean donated 100$ on behalf of this project. They also provided 50$ DigitalOcean credit to support the creation of the emailing interface. The original email can be found [here](https://covid19.swetankpoddar.me/digitalocean-funding.PNG).
