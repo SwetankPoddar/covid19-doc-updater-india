@@ -21,9 +21,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover{
-	border-bottom: 1px solid #0076ff;
-}
 code,
 pre {
 	color: #d400ff;
@@ -34,4 +31,16 @@ pre {
 code:before,
 code:after {
 	content: '\`';
+}
+
+main {
+	margin-top: 2em;
+}
+
+.doc-holder {
+	margin-top: 2em;
+}
+
+.message-holder {
+	margin-bottom: 2em;
 }
